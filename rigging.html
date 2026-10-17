@@ -11,9 +11,18 @@
 <main class="card">
   <h1>Rigging</h1>
   <div class="reel">
-    <div class="ph">Project 1</div>
-    <div class="ph">Project 2</div>
-    <div class="ph">Project 3</div>
+    <figure style="--i:1"><img src="guatar4.png" alt="3D acoustic guitar, full body view"><figcaption>Guitar: full view</figcaption></figure>
+    <figure style="--i:2"><img src="guitar1.png" alt="3D guitar neck and headstock"><figcaption>Guitar: neck and headstock</figcaption></figure>
+    <figure style="--i:3"><img src="guitar2.png" alt="Close-up of guitar tuning pegs"><figcaption>Guitar: tuning pegs</figcaption></figure>
+    <figure style="--i:4"><img src="guitar3.png" alt="Close-up of guitar bridge and strings"><figcaption>Guitar: bridge and strings</figcaption></figure>
   </div>
 </main>
+
+<div class="lb" id="lb" aria-hidden="true"><img alt=""></div>
+<script>
+const lb=document.getElementById('lb'),lbi=lb.querySelector('img');
+document.querySelectorAll('.reel img').forEach(i=>i.onclick=()=>{lbi.src=i.src;lbi.alt=i.alt;lb.classList.add('open')});
+lb.onclick=()=>lb.classList.remove('open');
+addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
+</script>
 </body></html>
