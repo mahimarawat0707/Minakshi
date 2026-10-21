@@ -9,8 +9,10 @@
   <style>
     :root{--green:#3b6b3f;--pink:#f08a9c;--cream:#fff7ef;--ink:#23402a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
     *,*::before,*::after{box-sizing:inherit}
-html,body{height:100%;margin:0}
-body{font-family:Quicksand,system-ui,sans-serif;color:var(--cream);background:var(--green);overflow:hidden}
+    html,body{
+      height:100%;margin:0
+    }
+    body{font-family:Quicksand,system-ui,sans-serif;color:var(--cream);background:var(--green);overflow:hidden}
 .bg{position:fixed;inset:0;background:var(--green) url(minakshi-bg.jpg) center 20%/cover no-repeat;transition:filter .7s ease,transform .9s cubic-bezier(.2,.8,.2,1);animation:breathe 9s ease-in-out infinite alternate;z-index:0}
 #rot{display:none;position:fixed;inset:0;z-index:100;background:var(--green);flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:30px;font:700 1.9rem Caveat,cursive}
 #rot svg{width:90px;height:90px;animation:turn 2.2s ease-in-out infinite}
