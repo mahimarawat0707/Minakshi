@@ -13,9 +13,9 @@
       height:100%;margin:0
     }
     body{font-family:Quicksand,system-ui,sans-serif;color:var(--cream);background:var(--green);overflow:hidden}
-.bg{position:fixed;inset:0;background:var(--green) url(minakshi-bg.jpg) center 20%/cover no-repeat;transition:filter .7s ease,transform .9s cubic-bezier(.2,.8,.2,1);animation:breathe 9s ease-in-out infinite alternate;z-index:0}
-#rot{display:none;position:fixed;inset:0;z-index:100;background:var(--green);flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:30px;font:700 1.9rem Caveat,cursive}
-#rot svg{width:90px;height:90px;animation:turn 2.2s ease-in-out infinite}
+    .bg{position:fixed;inset:0;background:var(--green) url(minakshi-bg.jpg) center 20%/cover no-repeat;transition:filter .7s ease,transform .9s cubic-bezier(.2,.8,.2,1);animation:breathe 9s ease-in-out infinite alternate;z-index:0}
+    #rot{display:none;position:fixed;inset:0;z-index:100;background:var(--green);flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center;padding:30px;font:700 1.9rem Caveat,cursive}
+    #rot svg{width:90px;height:90px;animation:turn 2.2s ease-in-out infinite}
 @keyframes turn{0%,30%{transform:rotate(0)}70%,100%{transform:rotate(-90deg)}}
 @media (orientation:portrait) and (max-width:900px){#rot{display:flex}}
 @keyframes breathe{from{transform:scale(1)}to{transform:scale(1.035)}}
